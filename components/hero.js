@@ -27,7 +27,7 @@ const hero = () => {
 
 
     //hero-right
-    const heroRightImage = React.createElement("img", {id: "right-image", src: "./images/hero-image.webp"}, null)
+    const heroRightImage = React.createElement("img", {id: "right-image", src: "/images/hero-image.webp"}, null)
     const heroRightContainer = React.createElement("div", {id: "hero-right"}, heroRightImage)
 
     // hero-section

@@ -1,7 +1,7 @@
 const navbar = () => {
 
     // logo
-    const logo = React.createElement("img", {id: "logo", src: "./images/logo.svg"}, null);
+    const logo = React.createElement("img", {id: "logo", src: "/images/logo.svg"}, null);
 
     //navLinks
     const link1 = React.createElement("a", {href: "#"}, "about me");
@@ -14,7 +14,7 @@ const navbar = () => {
 
     //ctaLink
     const ctaText = React.createElement("a", {href: "#"}, "book a call");
-    const ctaArrow = React.createElement("img", {src: "./images/cta-arrow.svg"});
+    const ctaArrow = React.createElement("img", {src: "/images/cta-arrow.svg"});
     //ctaContainer
     const ctaContainer = React.createElement("div", {id: "cta-container"}, [ctaText, ctaArrow]);
 
