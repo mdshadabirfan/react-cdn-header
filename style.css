@@ -31,25 +31,27 @@ html,
 body {
   height: 100%;
   width: 100%;
+  background-color: var(--bg-primary);
 }
 
-#root {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  padding: 10px 30px;
-  background-color: var(--bg-primary);
+#root header {
+  padding: 5px 30px;
+  overflow: hidden;
 }
 #root nav {
   width: 100%;
   height: 10vh;
+  padding: 40px 30px;
   display: flex;
-  direction: row;
+  flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  gap: 100px;
+  gap: 80px;
   position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  background-color: var(--bg-primary);
 }
 #root nav a {
   text-decoration: none;
@@ -66,7 +68,7 @@ body {
 #root nav #links-container {
   height: 100%;
   display: flex;
-  direction: row;
+  flex-direction: row;
   justify-content: flex-start;
   align-items: center;
   gap: 30px;
@@ -79,7 +81,7 @@ body {
 }
 #root nav #cta-container {
   display: flex;
-  direction: row;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 0px;
@@ -94,4 +96,80 @@ body {
 }
 #root nav #cta-container img {
   width: 20px;
+}
+#root #hero {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0px;
+  padding: 120px 0px 0px 0px;
+}
+#root #hero #hero-left {
+  position: absolute;
+  left: 3.5%;
+  top: 100%;
+  transform: rotate(-90deg) translateY(-50%);
+  transform-origin: left top;
+  color: var(--color-tertiary);
+  height: -moz-fit-content;
+  height: fit-content;
+}
+#root #hero #hero-middle {
+  padding-top: 60px;
+  padding-left: 90px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+}
+#root #hero #hero-middle #counters-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 30px;
+}
+#root #hero #hero-middle #counters-container h4 {
+  font-size: 2.8rem;
+  font-weight: 400;
+  color: #363636;
+}
+#root #hero #hero-middle #counters-container p {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--color-secondary);
+}
+#root #hero #hero-middle #heading-container {
+  width: 100%;
+  margin-block: 70px 0px;
+  color: var(--color-primary);
+}
+#root #hero #hero-middle #heading-container h1 {
+  font-size: 13rem;
+  font-weight: 300;
+  line-height: 100%;
+  letter-spacing: -10px;
+}
+#root #hero #hero-middle #heading-container p {
+  font-size: 1.1rem;
+}
+#root #hero #hero-middle #scroll {
+  padding-top: 200px;
+  color: var(--color-primary);
+}
+#root #hero #hero-right img {
+  padding-top: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  max-height: 100%;
 }/*# sourceMappingURL=style.css.map */
